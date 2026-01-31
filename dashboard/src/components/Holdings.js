@@ -12,7 +12,7 @@ const Holdings = () => {
     const fetchHoldings = async () => {
       try {
         // change the port to your backend port if different (e.g., 3001 or 3002)
-        const res = await axios.get("http://localhost:3001/holdings");
+        const res = await axios.get("https://stock-trading-gyon.onrender.com/holdings");
         setHoldingsState(res.data);
       } catch (err) {
         console.warn("Holdings API not available, using local data", err);
