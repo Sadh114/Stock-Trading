@@ -16,7 +16,7 @@ const Home = () => {
       }
       try {
         const { data } = await axios.post(
-          "http://localhost:3002",
+          "https://stock-trading-gyon.onrender.com/",
           {},
           { withCredentials: true }
         );
